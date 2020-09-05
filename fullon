@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+# Rather than putting all of your scripts
+# and state enforcement items in
+# individual unit files, full-unit
+# has just one unit file for a script
+# that enforces the user-land  from
+# custom scripts that would be deployed
+# by you to do arbitrary tasks such as
+# building container registries 
+# health checking functionality with
+# service restart on failure, setting
+# file system permissions, whatever it is.
+
+# We are going to provide three examples
+# that check on some standard components.
+
+/usr/local/sbin/set-sec &
+/usr/local/sbin/set-datefiles &
+/usr/local/sbin/set-services &
+
+# announce it in syslog
+
+logger "  ...executed fullon tasks"

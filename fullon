@@ -12,6 +12,8 @@
 # service restart on failure, setting
 # file system permissions, whatever it is.
 
+sleep 11 # initial delay, give the multi user targets a little time before checking on them
+
 # We are going to provide three examples
 # that check on some standard components.
 

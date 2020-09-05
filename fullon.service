@@ -1,6 +1,6 @@
 [Unit]
 Description=start up state
-After=network.target
+After=multi-user.target
 
 [Service]
 Type=simple
@@ -8,4 +8,4 @@ ExecStart=/usr/local/sbin/fullon
 TimeoutStartSec=0
 
 [Install]
-WantedBy=default.target
+WantedBy=fullon.target

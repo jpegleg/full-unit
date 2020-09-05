@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sleep 35 # hang out before checking
+
 # CentOS examples
 
 pgrep -x firewalld || systemctl restart firewalld

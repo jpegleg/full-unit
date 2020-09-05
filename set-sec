@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 pgrep -x ossec || /var/ossec/bin/ossec-control restart
-pgrep -x xrls1 || /usr/local/sbin/xrls1
+pgrep -x xrls1 || /usr/local/sbin/xrlsw

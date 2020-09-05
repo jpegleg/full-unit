@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# Rebuild index.html with value of current date replacing DATESED in template.
+
+datem=$(date)
+
+cp /var/tmp/.template /var/tmp/.s
+sed -i "s/DATESED/$datem/g" /var/tmp/.s
+
+mv /var/tmp/.s /var/www/html/index.html
+
+echo "$datem" > /var/log/date_file.txt

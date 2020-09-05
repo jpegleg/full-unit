@@ -1,0 +1,11 @@
+[Unit]
+Description=start up state
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/sbin/fullon
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target

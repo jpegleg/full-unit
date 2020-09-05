@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+cp /usr/local/bin/sec /usr/local/bin/xrls1 &&
+
+xrls1 -input /var/log/messages -input /var/log/secure -input /var/log/syslog -input /var/log/auth.log -input /var/log/httpd/access.log -input /var/log/nginx/access.log -input /var/log/apache2/access.log -input /var/log/access.log -conf /opt/system-sec.cfg

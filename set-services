@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# CentOS examples
+
+pgrep -x firewalld || systemctl restart firewalld
+pgrep -x haproxy || systemctl restart haproxy
+pgrep -x httpd || systemctl restart httpd
+pgrep -x named || systemctl restart named
+pgrep -x sec || sec --conf /etc/firewalld-auto.cfg --input /var/log/secure --log /var/log/firewall-auto.log --detach
